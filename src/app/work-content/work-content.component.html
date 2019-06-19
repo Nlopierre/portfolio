@@ -1,0 +1,90 @@
+<div class="section-wrapper">
+  <div class="work-section first">
+    <div class="work-item" id="work-item-title">
+      <h2>I have worked with:</h2>
+    </div>
+    <div class="work-item">
+      <ul>
+        <li class="logo-link"><a target="_blank" rel="noopener noreferrer" href="https://www.blackrock.com/"><img class="logo-img"
+              src="../../assets/img/blackrock.png" /></a></li>
+        <li class="logo-link"><a target="_blank" rel="noopener noreferrer" href="https://www.nyu.edu/"><img class="logo-img"
+              id="nyu-logo" src="../../assets/img/nyu.png" /></a></li>
+        <li class="logo-link"><a target="_blank" rel="noopener noreferrer" href="http://www.stereotheque.com/"><img
+              class="logo-img" src="../../assets/img/stereotheque.png" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="work-section second">
+    <div class="work-subsection">
+      <div class="work-item" id="work-item-title">
+        <h2>Projects</h2>
+      </div>
+      <div class="work-item">
+        <div id="projects-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#projects-carousel" data-slide-to="1"></li>
+            <li data-target="#projects-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <mat-card class="project-card" id="makerspace-card">
+                <mat-card-header>
+                  <mat-card-title>MakerSpace</mat-card-title>
+                  <mat-card-subtitle>Academic Starter Project</mat-card-subtitle>
+                </mat-card-header>
+                <a href="https://nlopierre.github.io/Makerspace/"><img mat-card-image class="project-img" src="../../assets/img/intro.png"
+                    alt="Photo of MakerSpace Website"></a>
+                <mat-card-content>
+                  <p class="project-content">
+                    Presentation website for the first workspace/ prototyping lab of New York University - Tandon
+                    School of
+                    Engineering
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </div>
+            <div class="carousel-item">
+              <mat-card class="project-card" id="stereotheque-card">
+                <mat-card-header>
+                  <mat-card-title>Stereotheque</mat-card-title>
+                  <mat-card-subtitle>Professional Project</mat-card-subtitle>
+                </mat-card-header>
+                  <img mat-card-image class="project-img" style="cursor:pointer;" (click)="openStereothequeModal()" src="../../assets/img/stereotheque-pink-logo.png"
+                  alt="Photo of Stereotheque Admin Website">
+                <mat-card-content>
+                  <p class="project-content">
+                    Data Visualization Web App to manage Stereotheque's main product
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </div>
+            <div class="carousel-item">
+              <mat-card class="project-card" id="kevs-card">
+                <mat-card-header>
+                  <mat-card-title>Kevs: Official Website</mat-card-title>
+                  <mat-card-subtitle>Professional Project</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image class="project-img" style="cursor:pointer;" (click)="openKevsModal()" src="../../assets/img/kevs-img.jpg"
+                  alt="Photo of Kevs">
+                <mat-card-content>
+                  <p class="project-content">
+                    Official Web App of composer and producer Kevin Aguirre.
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

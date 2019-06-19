@@ -1,0 +1,114 @@
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    
+    #work-item-title{
+        width: 80%;
+        margin: 0 10% 0 10%;
+        margin-bottom: 50px;
+    }
+    .work-item {
+        display: flex;
+        justify-content: center;
+
+      ul {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo-link {
+          overflow: hidden;
+          height: auto;
+
+          #nyu-logo {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .first{
+    padding-top:70px;
+  }
+  .second{
+    color: white;
+    background-color: rgb(184, 134, 11);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.logo-img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: rgb(184, 134, 11);
+  }
+}
+
+@media only screen and (max-width: 850px){
+    .logo-img{
+        padding-bottom: 25px;
+        padding-top: 25px;
+        font-size: 90%;
+        width: 300px;
+    }
+}
+
+.project-card{
+  max-width: 400px;
+  -webkit-box-shadow: 10px 10px 23px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 23px -10px rgba(0,0,0,1);
+  box-shadow: 10px 10px 23px -10px rgba(0,0,0,1);
+  margin: 20px 0;
+  height: 369px;
+}
+
+#work-item-card-options{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#stereotheque-card, #kevs-card {
+  display: block;
+}
+
+.mat-raised-button{
+  margin: 2px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23A9A9A9' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23A9A9A9' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+ .project-img{
+  width: 400px;
+}
+
+.project-content{
+  width: 100%;
+}

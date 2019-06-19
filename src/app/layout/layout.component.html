@@ -1,0 +1,36 @@
+<div class="page-header" id="page-header">
+  <div class="name-header-container">
+    <h3>Nicolas Lopierre Aguirre</h3>
+  </div>
+  <div class="menu-container">
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-btn">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</div>
+<div class="section-container">
+  <app-home class="section-wrapper"></app-home>
+  <app-about class="section-wrapper" id="about"></app-about>
+  <app-work-content class="section-wrapper" id="portfolio"></app-work-content>
+  <app-contact class="section-wrapper" id="contact"></app-contact>
+</div>
+<mat-menu #menu="matMenu">
+  <a href="#about">
+    <button mat-menu-item>
+      <mat-icon>face</mat-icon>
+      <span>About</span>
+    </button>
+  </a>
+  <a href="#portfolio">
+    <button mat-menu-item>
+      <mat-icon>work</mat-icon>
+      <span>Portfolio</span>
+    </button>
+  </a>
+  <a href="#contact">
+    <button mat-menu-item>
+      <mat-icon>contact_mail</mat-icon>
+      <span>Contact</span>
+    </button>
+  </a>
+</mat-menu>
